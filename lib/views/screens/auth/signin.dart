@@ -10,9 +10,16 @@ class SignIn extends StatefulWidget {
 class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Sign In Screen'),
+    return Scaffold(
+      body: Container(
+        child: Stack(
+          children: [
+            Container(
+              height: MediaQuery.of(context).size.height / 3.5,
+              width: MediaQuery.of(context).size.width,
+            ),
+          ],
+        ),
       ),
     );
   }
