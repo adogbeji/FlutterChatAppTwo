@@ -17,6 +17,14 @@ class _SignInState extends State<SignIn> {
             Container(
               height: MediaQuery.of(context).size.height / 3.5,
               width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [Colors.blue, Colors.blueAccent],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.vertical(bottom: Radius.elliptical(MediaQuery.of(context).size.width, 105)),
+              ),
             ),
           ],
         ),
