@@ -30,16 +30,26 @@ class _SignInState extends State<SignIn> {
               ),
             ),
             const Padding(
-              padding: EdgeInsets.only(top: 20),
+              padding: EdgeInsets.only(top: 70),
               child: Column(
                 children: [
                   Center(
                     child: Text(
                       'Sign In',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 24,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Center(
+                    child: Text(
+                      'Log In',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   ),
