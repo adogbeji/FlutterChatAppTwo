@@ -29,11 +29,11 @@ class _SignInState extends State<SignIn> {
                 ),
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.only(top: 70),
+            Padding(
+              padding: const EdgeInsets.only(top: 70),
               child: Column(
                 children: [
-                  Center(
+                  const Center(
                     child: Text(
                       'Sign In',
                       style: TextStyle(
@@ -43,14 +43,23 @@ class _SignInState extends State<SignIn> {
                       ),
                     ),
                   ),
-                  Center(
+                  const Center(
                     child: Text(
                       'Log In',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 18,
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
                       ),
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                    height: MediaQuery.of(context).size.height / 2,
+                    width: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                 ],
