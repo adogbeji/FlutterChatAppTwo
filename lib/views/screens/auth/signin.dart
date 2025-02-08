@@ -55,11 +55,18 @@ class _SignInState extends State<SignIn> {
                   ),
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-                    height: MediaQuery.of(context).size.height / 2,
-                    width: MediaQuery.of(context).size.width,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
+                    child: Material(
+                      elevation: 5.0,
                       borderRadius: BorderRadius.circular(10),
+                      child: Container(
+                        margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                        height: MediaQuery.of(context).size.height / 2,
+                        width: MediaQuery.of(context).size.width,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
                     ),
                   ),
                 ],
