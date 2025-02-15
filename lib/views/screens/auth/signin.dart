@@ -66,6 +66,18 @@ class _SignInState extends State<SignIn> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10),
                         ),
+                        child: Column(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(border: Border.all(width: 1.0, color: Colors.black38,),),
+                              child: const TextField(
+                                decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
