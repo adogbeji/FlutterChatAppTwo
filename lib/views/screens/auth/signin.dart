@@ -54,12 +54,13 @@ class _SignInState extends State<SignIn> {
                     ),
                   ),
                   Container(
-                    margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                    margin: const EdgeInsets.symmetric(
+                        vertical: 20, horizontal: 20),
                     child: Material(
                       elevation: 5.0,
                       borderRadius: BorderRadius.circular(10),
                       child: Container(
-                        margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                        padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
                         height: MediaQuery.of(context).size.height / 2,
                         width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
@@ -68,8 +69,22 @@ class _SignInState extends State<SignIn> {
                         ),
                         child: Column(
                           children: [
+                            const Text(
+                              'Email',
+                              style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.black,
+                              ),
+                            ),
                             Container(
-                              decoration: BoxDecoration(border: Border.all(width: 1.0, color: Colors.black38,),),
+                              padding: const EdgeInsets.only(left: 40),
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  width: 1.0,
+                                  color: Colors.black38,
+                                ),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
                               child: const TextField(
                                 decoration: InputDecoration(
                                   border: InputBorder.none,
