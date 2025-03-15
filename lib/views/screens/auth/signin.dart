@@ -24,8 +24,7 @@ class _SignInState extends State<SignIn> {
                   end: Alignment.bottomRight,
                 ),
                 borderRadius: BorderRadius.vertical(
-                  bottom:
-                      Radius.elliptical(MediaQuery.of(context).size.width, 105),
+                  bottom: Radius.elliptical(MediaQuery.of(context).size.width, 105),
                 ),
               ),
             ),
@@ -68,16 +67,21 @@ class _SignInState extends State<SignIn> {
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
                               'Email',
                               style: TextStyle(
                                 fontSize: 18,
                                 color: Colors.black,
+                                fontWeight: FontWeight.w500,
                               ),
                             ),
+
+                            const SizedBox(height: 10,),
+
                             Container(
-                              padding: const EdgeInsets.only(left: 40),
+                              // padding: const EdgeInsets.only(left: 40),
                               decoration: BoxDecoration(
                                 border: Border.all(
                                   width: 1.0,
@@ -88,6 +92,37 @@ class _SignInState extends State<SignIn> {
                               child: const TextField(
                                 decoration: InputDecoration(
                                   border: InputBorder.none,
+                                  prefixIcon: Icon(Icons.mail_outline, color: Colors.blue,),
+                                ),
+                              ),
+                            ),
+
+                            const SizedBox(height: 20,),
+
+                            const Text(
+                              'Password',
+                              style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+
+                            const SizedBox(height: 10,),
+
+                            Container(
+                              // padding: const EdgeInsets.only(left: 40),
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  width: 1.0,
+                                  color: Colors.black38,
+                                ),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: const TextField(
+                                decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                  prefixIcon: Icon(Icons.mail_outline, color: Colors.blue,),
                                 ),
                               ),
                             ),
