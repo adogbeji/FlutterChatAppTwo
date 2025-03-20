@@ -52,6 +52,9 @@ class _SignInState extends State<SignIn> {
                       ),
                     ),
                   ),
+
+                  const SizedBox(height: 20,),
+
                   Container(
                     margin: const EdgeInsets.symmetric(
                         vertical: 20, horizontal: 20),
@@ -122,8 +125,9 @@ class _SignInState extends State<SignIn> {
                               child: const TextField(
                                 decoration: InputDecoration(
                                   border: InputBorder.none,
-                                  prefixIcon: Icon(Icons.mail_outline, color: Colors.blue,),
+                                  prefixIcon: Icon(Icons.lock, color: Colors.blue,),
                                 ),
+                                obscureText: true,
                               ),
                             ),
                           ],
