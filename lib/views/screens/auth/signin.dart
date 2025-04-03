@@ -130,6 +130,20 @@ class _SignInState extends State<SignIn> {
                                 obscureText: true,
                               ),
                             ),
+
+                            const SizedBox(height: 10,),
+
+                            Container(
+                              alignment: Alignment.bottomRight,
+                              child: const Text(
+                                'Forgot Password?',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                       ),
