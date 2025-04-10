@@ -144,16 +144,30 @@ class _SignInState extends State<SignIn> {
                                 ),
                               ),
                             ),
+
+                            const SizedBox(height: 50,),
+
                             Container(
-                              decoration: const BoxDecoration(
-                                color: Color(0xFF6380FB),
+                              child: Material(
+                                elevation: 5,
+                                child: Center(
+                                  child: Container(
+                                    width: 130,
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF6380FB),
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                    padding: const EdgeInsets.all(10),
+                                    child: const Center(
+                                      child: Text('Sign In', style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),),
+                                    ),
+                                  ),
+                                ),
                               ),
-                              padding: const EdgeInsets.all(10),
-                              child: const Text('Sign In', style: TextStyle(
-                                fontSize: 18,
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                              ),),
                             ),
                           ],
                         ),
