@@ -147,12 +147,13 @@ class _SignInState extends State<SignIn> {
 
                             const SizedBox(height: 50,),
 
-                            Container(
-                              child: Material(
-                                elevation: 5,
-                                child: Center(
+                            Center(
+                              child: Container(
+                                width: 130,
+                                child: Material(
+                                  elevation: 5,
+                                  borderRadius: BorderRadius.circular(10),
                                   child: Container(
-                                    width: 130,
                                     decoration: BoxDecoration(
                                       color: const Color(0xFF6380FB),
                                       borderRadius: BorderRadius.circular(10),
@@ -173,6 +174,14 @@ class _SignInState extends State<SignIn> {
                         ),
                       ),
                     ),
+                  ),
+                  const Row(
+                    children: [
+                      Text('Dont\'t have an account? Sign up now', style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.black,
+                      ),),
+                    ],
                   ),
                 ],
               ),
