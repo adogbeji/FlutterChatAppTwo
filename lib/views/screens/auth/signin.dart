@@ -24,7 +24,8 @@ class _SignInState extends State<SignIn> {
                   end: Alignment.bottomRight,
                 ),
                 borderRadius: BorderRadius.vertical(
-                  bottom: Radius.elliptical(MediaQuery.of(context).size.width, 105),
+                  bottom:
+                      Radius.elliptical(MediaQuery.of(context).size.width, 105),
                 ),
               ),
             ),
@@ -62,7 +63,8 @@ class _SignInState extends State<SignIn> {
                       elevation: 5.0,
                       borderRadius: BorderRadius.circular(10),
                       child: Container(
-                        padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 30, horizontal: 20),
                         height: MediaQuery.of(context).size.height / 2,
                         width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
@@ -95,7 +97,10 @@ class _SignInState extends State<SignIn> {
                               child: const TextField(
                                 decoration: InputDecoration(
                                   border: InputBorder.none,
-                                  prefixIcon: Icon(Icons.mail_outline, color: Colors.blue,),
+                                  prefixIcon: Icon(
+                                    Icons.mail_outline,
+                                    color: Colors.blue,
+                                  ),
                                 ),
                               ),
                             ),
@@ -125,7 +130,10 @@ class _SignInState extends State<SignIn> {
                               child: const TextField(
                                 decoration: InputDecoration(
                                   border: InputBorder.none,
-                                  prefixIcon: Icon(Icons.lock, color: Colors.blue,),
+                                  prefixIcon: Icon(
+                                    Icons.lock,
+                                    color: Colors.blue,
+                                  ),
                                 ),
                                 obscureText: true,
                               ),
@@ -160,11 +168,14 @@ class _SignInState extends State<SignIn> {
                                     ),
                                     padding: const EdgeInsets.all(10),
                                     child: const Center(
-                                      child: Text('Sign In', style: TextStyle(
-                                        fontSize: 18,
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                      ),),
+                                      child: Text(
+                                        'Sign In',
+                                        style: TextStyle(
+                                          fontSize: 18,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -175,12 +186,27 @@ class _SignInState extends State<SignIn> {
                       ),
                     ),
                   ),
+
+                  const SizedBox(height: 40,),
+
                   const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('Dont\'t have an account? Sign up now', style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.black,
-                      ),),
+                      Text(
+                        'Dont\'t have an account?',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                        ),
+                      ),
+                      Text(
+                        'Sign up now',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Color(0xFF6380FB),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
                     ],
                   ),
                 ],
